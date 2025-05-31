@@ -76,8 +76,15 @@ body {
   font-family: "HelveticaNowDisplay";
 }
 
-/* ---------- HEADER ----------- */
+hr {
+  background-color: #860000;
+  height: 2px;
+  border: none;
+  margin: 20px 0;
 
+}
+
+/* ---------- HEADER ----------- */
 
 /* HEADER */
 header {
@@ -176,9 +183,14 @@ menu>p {
 
 /* ------ PRINCIPAL -------- */
 
+.principal-conteudo {
+  width: 100%;
+  display: flex;
+}
 
 .principal {
-  padding: 20px 100px;
+  width: 80%;
+  padding: 20px 35px 0px 100px;
 }
 
 .principal-UN {
@@ -187,55 +199,91 @@ menu>p {
   gap: 20px;
   font-weight: 500;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .principal-UN span {
   display: inline-block;
   width: 40px;
-  height: 40px; 
+  height: 40px;
   background-color: red;
   border-radius: 50%;
   box-shadow: 0 4px 4px rgba(255, 0, 0, 0.2);
 }
 
-.principal hr {
-    background-color: #860000;
-    color: #860000;
-}
-
 .principal-HR {
-    width: 70%;
-    margin-left: 0;
-    margin-right: auto;
-    height: 1px;
-    border: none;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .principal-NOTICIAS {
-    width: 70%;
-    display: flex;
-    gap: 35px;
-    margin-left: 0;
-    margin-right: auto;
-    box-sizing: border-box; 
+  display: flex;
+  gap: 35px;
+  margin-left: 0;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
-.principal-N1 {
-    width: 55%; 
-}
 
-.principal-N2 {
-    width: 45%; 
-}
-
-.principal-N1 img{
+.principal-N1 img {
   width: 100%;
 }
 
-.principal-N2 img{
+.principal-N2 img {
   width: 100%;
 }
+
+.aside {
+  padding: 20px 100px 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.aside-hr {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 82px;
+}
+
+.aside section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.aside section img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.aside-coluna h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+}
+
+.aside-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag {
+  background-color: #EDE5E5;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+.date {
+  font-size: 12px;
+  color: #888;
+}
+
 
 /* ------- FOOTER -------- */
 
