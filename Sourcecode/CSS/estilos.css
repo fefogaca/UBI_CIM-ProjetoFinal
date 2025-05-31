@@ -218,11 +218,8 @@ menu>p {
 .principal-NOTICIAS {
   display: flex;
   gap: 35px;
-  margin-left: 0;
-  margin-right: auto;
-  box-sizing: border-box;
+  margin-bottom: 30px;
 }
-
 
 .principal-N1 img {
   width: 100%;
@@ -231,6 +228,21 @@ menu>p {
 .principal-N2 img {
   width: 100%;
 }
+
+.principal-N3 img {
+  width: 100%;
+}
+
+.principal-N4 img {
+  width: 100%;
+}
+
+.principal-hr-separador{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* ------ aside -------- */
 
 .aside {
   padding: 20px 100px 0 0;
@@ -241,7 +253,6 @@ menu>p {
 
 .aside-hr {
   width: 100%;
-  margin-bottom: 30px;
   margin-top: 82px;
 }
 
@@ -271,7 +282,10 @@ menu>p {
   gap: 8px;
 }
 
-
+.aside section{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 
 .tag {
   background-color: #EDE5E5;
@@ -285,6 +299,120 @@ menu>p {
   font-size: 12px;
   color: #888;
 }
+
+/* ------ secundário -------- */
+
+/* Container principal da seção */
+.secundario {
+    padding: 20px 100px 0px 100px;
+}
+
+.secundario-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.secundario-titulo span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.card-container {
+    position: relative;
+    display: inline-block;
+}
+
+.main-image {
+    display: block;
+    height: auto;
+    filter: brightness(80%);
+    width: 322px;
+    height: 577px;
+    height: auto;
+}
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secundario-logo {
+    width: 60px;
+    height: auto;
+    align-self: flex-start; 
+    margin: 30px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: flex-end; /* Pushes text to bottom */
+}
+
+.etiqueta {
+    background-color: #860000;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    align-self: flex-start;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.card-text p {
+    margin: 0px 25px 50px 25px;
+    color: white;
+}
+
+.card-wrapper {
+  display: flex;
+  scroll-behavior: smooth;
+  gap: 16px;
+  max-width: 100%;
+}
+
+.card-container {
+  min-width: 322px; /* consistent with your .main-image width */
+  flex-shrink: 0;
+}
+
+.arrow {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.arrow.left svg {
+  transform: scale(-1, 1);
+}
+
+
 
 
 /* ------- FOOTER -------- */
