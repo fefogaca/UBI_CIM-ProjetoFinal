@@ -73,6 +73,19 @@ body {
   font-family: "HelveticaNowDisplay";
 }
 
+hr {
+  background-color: #860000;
+  height: 2px;
+  border: none;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
 /* ---------- HEADER ----------- */
 header {
   background-color: #860000;
@@ -165,6 +178,95 @@ nav>h3 {
 
 main{
     padding: 20px 100px;
+}
+
+.formulario-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario-header h1{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+.formulario-header p{
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+
+.form-container {
+  background-color: #f0e8e8; 
+  border: 1px solid #860000;
+  padding: 30px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-container p {
+  font-weight: bold;
+  margin: 20px 0 5px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 94%;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #e6e1e1;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: #c0bdbd;
+}
+
+.form-container textarea {
+  resize: none;
+  height: 150px;
+}
+
+.form-container button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to right, #a04141, #860000);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+.form-container button i {
+  font-size: 14px;
+}
+
+.form-container button:hover {
+  background: linear-gradient(to right, #860000, #a04141);
+}
+
+.mapa-container {
+  margin-top: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 

@@ -73,6 +73,19 @@ body {
   font-family: "HelveticaNowDisplay";
 }
 
+hr {
+  background-color: #860000;
+  height: 2px;
+  border: none;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
 /* ---------- HEADER ----------- */
 header {
   background-color: #860000;
@@ -167,6 +180,140 @@ main{
     padding: 20px 500px;
 }
 
+hr {
+  background-color: #860000;
+  height: 2px;
+  border: none;
+  margin: 20px 0;
+}
+
+.titulo h1{
+  color: black;
+}
+
+.container{
+  color: #4F5257;
+}
+
+.partilhar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 50px;
+  background-color: #EDE5E5; 
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  margin: 30px 0px 70px 0px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.social-button i {
+  font-size: 24px; 
+}
+
+.autores{
+  margin-top: 30px;
+  font-weight: 300;
+
+}
+
+.autores .autores-vermelho{
+  color: #860000;
+}
+
+.autores i{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.autores-grey {
+  color: #4F5257 ;
+}
+
+.imagem p{
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 90%;
+}
+
+.imagem img{
+  width: 100%;
+}
+
+.texto{
+  margin-bottom: 60px;
+}
+
+.data{
+  margin-bottom: 60px;
+}
+
+.data p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.data-flex {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+}
+
+.data-flex svg{
+  fill: #860000;
+}
+
+.data .data-esquerda{
+  text-align: right;
+}
+
+.MA-GRAPH{
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  gap: 10px;
+}
+
+.MA-GRAPH img{
+  width: 47px;
+  height: 47px;
+}
+
+.MA-CARD{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.MA-CARD h1{
+  font-weight: 200;
+}
+
+.MA-CARD img{
+  min-width: 276px;
+  height: 129px;
+}
+
+.MA-TEXT {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  flex: 1; 
+  color: #860000;
+}
 
 
 /* ------- NEWSLETTER & FOOTER -------- */

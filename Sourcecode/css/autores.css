@@ -73,6 +73,19 @@ body {
   font-family: "HelveticaNowDisplay";
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 40px 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
 /* ---------- HEADER ----------- */
 header {
   background-color: #860000;
@@ -166,6 +179,48 @@ nav>h3 {
 main{
     padding: 20px 100px;
 }
+
+.perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  gap: 40px;
+}
+
+.perfil .info {
+  flex: 1;
+}
+
+.perfil h1 {
+  font-family: 'HelveticaNowDisplay', sans-serif;
+  font-size: 96px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.perfil p {
+  font-family: 'HelveticaNowDisplay', sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.avatar {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid #a00;
+  background-color: #f9f9f9;
+  background-image: url('https://www.svgrepo.com/show/382106/avatar-placeholder.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  flex-shrink: 0;
+}
+
+
 
 
 /* ------- NEWSLETTER & FOOTER -------- */

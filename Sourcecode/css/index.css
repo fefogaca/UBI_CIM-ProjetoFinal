@@ -80,6 +80,11 @@ hr {
   margin: 20px 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* ---------- HEADER ----------- */
 header {
   background-color: #860000;
@@ -281,16 +286,10 @@ menu>p {
   flex-direction: column;
 }
 
-.principal-N1 a {
+a {
   text-decoration: none;
   color: black;
 }
-
-.principal-N2 a {
-  text-decoration: none;
-  color: black;
-}
-
 
 .principal-N1 img,
 .principal-N3 img {
