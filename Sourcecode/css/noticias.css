@@ -1,0 +1,514 @@
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../fonts/HelveticaNowDisplay-ExtBlk.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../fonts/HelveticaNowDisplay-Black.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../fonts/HelveticaNowDisplay-ExtraBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../fonts/HelveticaNowDisplay-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../fonts/HelveticaNowDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../fonts/HelveticaNowDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../fonts/HelveticaNowDisplay-ExtLt.woff2') format('woff2');
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../fonts/HelveticaNowDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../fonts/HelveticaNowDisplay-Thin.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('../fonts/HelveticaNowDisplay-Hairline.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "HelveticaNowDisplay";
+}
+
+/* ---------- HEADER ----------- */
+header {
+  background-color: #860000;
+  padding: 40px 100px 20px 100px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav i {
+  color: white;
+  margin-right: 10px;
+}
+
+nav h3 {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+
+nav>i,
+nav>h3 {
+  display: inline-block;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right span {
+  background-color: white;
+  color: black;
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-right span:not(:last-child):hover {
+  background-color: #a30000;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(163, 0, 0, 0.4);
+}
+
+.nav-cultura {
+  color: #6c00a3;
+  background-color: #f2f2f2;
+
+}
+
+.nav-cultura:hover {
+  background-color: #6c00a3;
+  color: white;
+  box-shadow: 0 6px 12px rgba(108, 0, 163, 0.3);
+}
+
+.nav-right span:last-child {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-right span:last-child:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(204, 0, 0, 0.6);
+}
+
+/* ------- Main -------- */
+
+main{
+    padding: 20px 500px;
+}
+
+
+
+/* ------- NEWSLETTER & FOOTER -------- */
+.newsletter {
+  margin-top: 60px;
+  padding: 40px 20px;
+  background-color: #EDE5E5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.newsletter h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.newsletter p>a {
+  color: black;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container input {
+  padding: 15px 20px;
+  min-width: 280px;
+  flex: 1;
+  max-width: 380px;
+  border: none;
+  border-bottom: 3px solid #a30000;
+  border-radius: 10px 10px 0 0;
+  outline: none;
+  font-size: 16px;
+  background-color: white;
+}
+
+.input-container input::placeholder {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.input-container button {
+  background-color: #a30000;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.input-container button:hover {
+  background-color: #8b0000;
+}
+
+.footer {
+  background-color: #8b0000;
+  color: white;
+  padding: 50px 100px 100px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  flex: 1;
+}
+
+.footer-links div {
+  min-width: 150px;
+  flex: 1;
+}
+
+.footer-links-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-text {
+  font-weight: 350;
+  font-size: 1.5em;
+}
+
+.footer-text p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+/* Large tablets and small desktops */
+@media (max-width: 1200px) {
+  .principal {
+    padding: 20px 50px 0px 50px;
+  }
+  
+  .aside {
+    padding: 20px 50px 0 20px;
+  }
+  
+  .secundario {
+    padding: 20px 50px 0px 50px;
+  }
+  
+  .footer {
+    padding: 50px 50px 50px 50px;
+  }
+  
+  header {
+    padding: 40px 50px 20px 50px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 950px) {
+
+  header {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .nav-cultura {
+    display: none;
+  }
+  
+  .principal-conteudo {
+    flex-direction: column;
+  }
+
+  .aside {
+    max-width: 100%;
+    padding: 20px 20px 0 20px;
+  }
+  
+  .aside-hr {
+    margin-top: 20px;
+  }
+
+  .aside section img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .principal {
+    padding: 20px 20px 0px 20px;
+  }
+  
+  .secundario {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .secundario-hr{
+    clear: both;
+    visibility: hidden;
+  }
+  
+  .footer {
+    padding: 30px 20px 30px 20px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .card {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .arrow {
+    display: none;
+  }
+  
+  .principal-N1 img,
+  .principal-N3 img {
+    height: 200px;
+  }
+
+  .principal-N2 img,
+  .principal-N4 img {
+    height: 150px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-right {
+    display: none;
+  }
+  
+  .principal-NOTICIAS {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .secundario-hr{
+    display: block;
+  }
+  
+  .coluna1 {
+    min-width: 100%;
+  }
+
+  .coluna2 {
+    min-width: 100%;
+  }
+  
+  .aside section {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  
+
+  .aside-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+  .card-container {
+    min-width: 250px;
+  }
+  
+  .main-image {
+    height: 400px;
+  }
+  
+  .newsletter h1 {
+    font-size: 28px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .input-container button {
+    width: 100%;
+  }
+  
+  .footer-wrapper {
+    text-align: center;
+  }
+  
+  .footer-logo {
+    justify-content: center;
+    text-align: center;
+  }
+  
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .principal-UN {
+    gap: 15px;
+  }
+  
+  .principal-UN span {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .secundario-titulo span {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .secundario-hr{
+    display: block;
+  }
+
+  .card-container {
+    min-width: 220px;
+  }
+  
+  .main-image {
+    height: 350px;
+  }
+  
+  .newsletter h1 {
+    font-size: 24px;
+  }
+  
+  .newsletter p {
+    font-size: 14px;
+  }
+}
