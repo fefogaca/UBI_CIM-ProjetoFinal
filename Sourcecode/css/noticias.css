@@ -448,15 +448,7 @@ hr {
 
 /* Large tablets and small desktops */
 @media (max-width: 1200px) {
-  .principal {
-    padding: 20px 50px 0px 50px;
-  }
-  
-  .aside {
-    padding: 20px 50px 0 20px;
-  }
-  
-  .secundario {
+  .main {
     padding: 20px 50px 0px 50px;
   }
   
