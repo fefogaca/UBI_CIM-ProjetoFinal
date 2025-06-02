@@ -182,11 +182,11 @@ nav>h3 {
 
 /* ------- Main -------- */
 
-main{
-    padding: 20px 100px;
+main {
+  padding: 20px 100px;
 }
 
-main hr{
+main hr {
   margin-top: 0px;
 }
 
@@ -196,10 +196,12 @@ main hr{
   align-items: center;
   gap: 40px;
   margin: 40px 0px;
+  flex-wrap: wrap;
 }
 
 .perfil .info {
   flex: 1;
+  min-width: 300px;
 }
 
 .perfil h1 {
@@ -210,6 +212,7 @@ main hr{
   line-height: 1.1;
   margin-bottom: 20px;
 }
+
 .perfil p {
   font-family: 'HelveticaNowDisplay', sans-serif;
   font-size: 14px;
@@ -228,6 +231,7 @@ main hr{
   background-size: 100%;
   flex-shrink: 0;
 }
+
 
 
 /* ------- NEWSLETTER & FOOTER -------- */
@@ -360,24 +364,26 @@ main hr{
 }
 
 
-/* Large tablets and small desktops */
+/* ======= RESPONSIVE BREAKPOINTS ======= */
+
+/* Tablets grandes Pcs pequenos */
 @media (max-width: 1200px) {
   .principal {
     padding: 20px 50px 0px 50px;
   }
-  
+
   .aside {
     padding: 20px 50px 0 20px;
   }
-  
+
   .secundario {
     padding: 20px 50px 0px 50px;
   }
-  
+
   .footer {
     padding: 50px 50px 50px 50px;
   }
-  
+
   header {
     padding: 40px 50px 20px 50px;
   }
@@ -393,7 +399,7 @@ main hr{
   .nav-cultura {
     display: none;
   }
-  
+
   .principal-conteudo {
     flex-direction: column;
   }
@@ -402,7 +408,7 @@ main hr{
     max-width: 100%;
     padding: 20px 20px 0 20px;
   }
-  
+
   .aside-hr {
     margin-top: 20px;
   }
@@ -415,34 +421,34 @@ main hr{
   .principal {
     padding: 20px 20px 0px 20px;
   }
-  
+
   .secundario {
     padding: 20px 20px 0px 20px;
   }
 
-  .secundario-hr{
+  .secundario-hr {
     clear: both;
     visibility: hidden;
   }
-  
+
   .footer {
     padding: 30px 20px 30px 20px;
   }
-  
+
   .footer-links {
     flex-direction: column;
     gap: 30px;
   }
-  
+
   .card {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .arrow {
     display: none;
   }
-  
+
   .principal-N1 img,
   .principal-N3 img {
     height: 200px;
@@ -454,7 +460,7 @@ main hr{
   }
 }
 
-/* Mobile devices */
+/* Mobile */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -473,16 +479,16 @@ main hr{
   .nav-right {
     display: none;
   }
-  
+
   .principal-NOTICIAS {
     flex-direction: column;
     gap: 20px;
   }
 
-  .secundario-hr{
+  .secundario-hr {
     display: block;
   }
-  
+
   .coluna1 {
     min-width: 100%;
   }
@@ -490,86 +496,200 @@ main hr{
   .coluna2 {
     min-width: 100%;
   }
-  
+
   .aside section {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  
-  
 
-  .aside-row{
+
+
+  .aside-row {
     display: flex;
     justify-content: center;
     align-items: center;
-  } 
-  
+  }
+
   .card-container {
     min-width: 250px;
   }
-  
+
   .main-image {
     height: 400px;
   }
-  
+
   .newsletter h1 {
     font-size: 28px;
   }
-  
+
   .input-container input {
     width: 100%;
     max-width: 100%;
   }
-  
+
   .input-container button {
     width: 100%;
   }
-  
+
   .footer-wrapper {
     text-align: center;
   }
-  
+
   .footer-logo {
     justify-content: center;
     text-align: center;
   }
-  
+
 }
 
-/* Small mobile devices */
+/* Mobile pequeno */
 @media (max-width: 480px) {
   .principal-UN {
     gap: 15px;
   }
-  
+
   .principal-UN span {
     width: 30px;
     height: 30px;
   }
-  
+
   .secundario-titulo span {
     width: 28px;
     height: 28px;
   }
-  
-  .secundario-hr{
+
+  .secundario-hr {
     display: block;
   }
 
   .card-container {
     min-width: 220px;
   }
-  
+
   .main-image {
     height: 350px;
   }
-  
+
   .newsletter h1 {
     font-size: 24px;
   }
-  
+
   .newsletter p {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding: 20px 50px;
+  }
+
+  .perfil {
+    gap: 30px;
+  }
+
+  .avatar {
+    width: 400px;
+    height: 400px;
+  }
+
+  .perfil h1 {
+    font-size: 80px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 950px) {
+  main {
+    padding: 20px 30px;
+  }
+
+  main hr {
+    margin-top: 20px;
+  }
+
+  .perfil {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .perfil .info {
+    min-width: unset;
+    order: 2;
+  }
+
+  .avatar {
+    width: 300px;
+    height: 300px;
+    order: 1;
+  }
+
+  .perfil h1 {
+    font-size: 64px;
+  }
+
+  .perfil p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 20px;
+  }
+
+  main hr {
+    margin-top: 20px;
+  }
+
+  .perfil {
+    margin: 30px 0;
+    gap: 25px;
+  }
+
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+
+  .perfil h1 {
+    font-size: 48px;
+  }
+
+  .perfil p {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  main {
+    padding: 15px 15px;
+  }
+
+  .perfil {
+    margin: 25px 0;
+    gap: 20px;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .perfil h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .perfil p {
+    font-size: 14px;
+    line-height: 1.5;
   }
 }

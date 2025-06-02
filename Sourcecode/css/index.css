@@ -634,7 +634,7 @@ a {
 
 /* ======= RESPONSIVE BREAKPOINTS ======= */
 
-/* Large tablets and small desktops */
+/* Tablets grandes Pcs pequenos */
 @media (max-width: 1200px) {
   .principal {
     padding: 20px 50px 0px 50px;
@@ -729,7 +729,7 @@ a {
   }
 }
 
-/* Mobile devices */
+/* Mobile  */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -810,7 +810,7 @@ a {
 
 }
 
-/* Small mobile devices */
+/* Mobile pequeno */
 @media (max-width: 480px) {
   .principal-UN {
     gap: 15px;
